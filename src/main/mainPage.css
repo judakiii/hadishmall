@@ -1,0 +1,316 @@
+@font-face {
+	font-family: myfont;
+	src: url('../Cairo-VariableFont_wght.ttf');
+}
+* {
+	font-family: myfont;
+	color: aliceblue;
+	scroll-behavior: smooth;
+	direction: rtl !important;
+}
+html {
+	background-color: '#131316';
+}
+span {
+	font-size: 1.8rem;
+	color: aliceblue;
+}
+ul {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+li {
+	width: 8rem !important;
+	height: 100% !important;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+a {
+	width: 100% !important;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+p {
+	margin: 0 !important;
+}
+#titleFood {
+	display: ruby !important;
+}
+.bg-test {
+	background-color: red !important;
+}
+.buttonActive {
+	background-color: orange !important;
+}
+.whiteColor {
+	color: aliceblue;
+}
+.grayColor {
+	color: rgb(188, 185, 185) !important;
+}
+.selectColor {
+	color: rgb(111, 111, 111) !important;
+}
+.bg-color {
+	background-color: #131316;
+}
+.part-color {
+	background-color: #282c2f;
+}
+.w-15 {
+	width: 15% !important;
+}
+/* .w-25 {
+	width: 25% !important;
+} */
+/* .w-34 {
+	width: 30% !important;
+}
+.w-35 {
+	width: 34% !important;
+} */
+/* .w-38 {
+	width: 38% !important;
+}
+.w-40 {
+	width: 40% !important;
+}
+.w-55 {
+	width: 55% !important;
+}
+.w-62 {
+	width: 62% !important;
+}
+.w-66 {
+	width: 70% !important;
+}
+.w-80 {
+	width: 80% !important;
+} */
+/* .w-90 {
+	width: 90% !important;
+} */
+.w-94 {
+	width: 94% !important;
+}
+.h-50 {
+	height: 50% !important;
+}
+.h-55 {
+	height: 55% !important;
+}
+/* .h-60 {
+	height: 60% !important;
+} */
+/* .h-80 {
+	height: 80% !important;
+}
+.h-90 {
+	height: 80% !important;
+} */
+.w-18rem {
+	width: 18rem !important;
+}
+.h-2rem {
+	height: 2rem !important;
+}
+/* .h-3rem {
+	height: 3rem !important;
+} */
+.h-7rem {
+	height: 7rem !important;
+}
+.h-8rem {
+	height: 10rem !important;
+}
+/* .h-9rem {
+	height: 9rem !important;
+} */
+.h-8-5rem {
+	height: 8.4rem !important;
+}
+/* .h-12rem {
+	height: 13rem !important;
+} */
+.h-27rem {
+	height: 27rem !important;
+}
+/* .fs-0-5rem {
+	font-size: 0.5rem !important;
+} */
+.fs-0-75rem {
+	font-size: 0.75rem !important;
+}
+.fs-0-85rem {
+	font-size: 0.75rem !important;
+}
+.fs-1-2rem {
+	font-size: 1.2rem !important;
+}
+.fs-1-5rem {
+	font-size: 1.5rem !important;
+}
+/* .fs-1-65rem {
+	font-size: 1.65rem !important;
+} */
+/* .fs-1-75rem {
+	font-size: 1.75rem !important;
+} */
+.fs-2rem {
+	font-size: 2.5rem !important;
+}
+/* .marginleft20px {
+	margin-left: 20px !important;
+} */
+.scroll-x {
+	overflow-x: scroll !important;
+}
+/* .header {
+	top: 0px;
+
+	border-top-left-radius: 0.75rem !important;
+	border-top-right-radius: 0.75rem !important;
+} */
+.text-end {
+	text-align: end !important;
+}
+.borderOfcards {
+	border: 5px hidden none;
+	border-radius: 15px;
+}
+.borderOfphoto {
+	border: 1px hidden none;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+}
+/* .borderOfres {
+	border: 1px hidden none;
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+} */
+.boxShadow {
+	box-shadow: 0px 5px 8px 4px rgba(31, 38, 135, 0.37);
+}
+.buttonPrimary {
+	border: 1px none hidden;
+	border-radius: 1.7rem !important;
+	width: 90%;
+}
+.glassmorphism {
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 10px 10px 10px 0px rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	border-radius: 15px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.bar {
+	border-radius: 1rem !important;
+}
+.insideOfbar {
+	width: 5rem !important;
+	height: 5rem !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/* .px-1-5rem {
+	padding-left: 1.5rem !important;
+	padding-right: 1.5rem !important;
+} */
+.widthOfwelcomeLogo {
+	width: 12rem !important;
+}
+.moneyBox {
+	/* position: relative;
+	bottom: 7px; */
+	margin-bottom: 0.25rem !important;
+}
+@media only screen and (max-width: 640px) {
+	.scroll-x {
+		overflow-x: scroll !important;
+	}
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+	span {
+		font-size: 1.6rem !important;
+		color: aliceblue;
+	}
+	.fs-0-85rem {
+		font-size: 0.65rem !important;
+	}
+}
+@media (min-width: 576px) and (max-width: 800px) {
+	span {
+		font-size: 1.6rem !important;
+		color: aliceblue;
+	}
+	.fs-0-85rem {
+		font-size: 0.7rem !important;
+	}
+}
+@media (max-width: 360px) {
+	span {
+		font-size: 1.6rem !important;
+		color: aliceblue;
+	}
+	.fs-0-85rem {
+		font-size: 0.7rem !important;
+	}
+}
+@keyframes example {
+	from {
+		right: -22rem;
+	}
+	to {
+		right: 0rem;
+	}
+}
+.comeBoxanimation {
+	position: relative;
+	animation-name: example;
+	right: -22rem;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+.dd {
+	background-image: linear-gradient(
+		to right,
+		#bbbbbb 5%,
+		#ec0382 25%,
+		#6a51a2 61%,
+
+		#bbbbbb 100%
+	);
+
+	color: #fff;
+
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.fadeMe {
+	animation: fadeIn 6.5s linear;
+}
