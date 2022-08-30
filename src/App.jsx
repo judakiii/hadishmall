@@ -6,7 +6,7 @@ import BurgerLand from './main/burgerLand';
 import Anatolia from './main/anatolia';
 import ChickenCounter from './main/chickenCounter';
 import Chia from './main/chia';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Perprok from './main/perprok';
 import Saj from './main/saj';
 import Maya from './main/maya';
