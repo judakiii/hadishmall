@@ -1,17 +1,15 @@
-import React from 'react';
-import { useEffect } from 'react';
-import './App.css';
+import React, { useEffect, Suspense } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Mizban from './main/mizban';
 import BurgerLand from './main/burgerLand';
 import Anatolia from './main/anatolia';
 import ChickenCounter from './main/chickenCounter';
 import Chia from './main/chia';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Perprok from './main/perprok';
 import Saj from './main/saj';
 import Maya from './main/maya';
-import { Suspense } from 'react';
 import ResturantPage2 from './main/resturantPage2';
+import './App.css';
 const Mainpage = React.lazy(() => import('./main/resturantPage'));
 const App = () => {
 	useEffect(() => (document.title = 'Hadish Mall '), []);

@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import FoodCards from '../component/foodCards';
 import HeadMenu from '../component/headMenu';
 import TitleFood from '../component/titleFood';
 import HeaderChanger from '../component/headChanger';
+import mizban from '../icons/mizban.png';
 import {
 	Appetizer,
 	CheloKebab,
@@ -15,10 +16,18 @@ import {
 } from '../DATA/mizban';
 import './mainPage.css';
 const Mizban = () => {
+	const [start, setStart] = useState(true);
+	setTimeout(() => {
+		setStart(false);
+	}, 1);
 	return (
 		<>
-			<div className='w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-color'>
-				<HeaderChanger />
+			<div
+				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-color  ${
+					start === true ? 'position-fixed' : ''
+				}`}
+			>
+				<HeaderChanger titleName='میزبان' image={mizban} />
 				<HeadMenu
 					// kebab='T'
 					breadKebab='T'

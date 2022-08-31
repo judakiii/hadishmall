@@ -8,6 +8,13 @@
 	/* scroll-behavior: smooth initial; */
 	direction: rtl !important;
 }
+.hideScroll::-webkit-scrollbar {
+	display: none !important;
+}
+.hideScroll {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none;
+}
 html {
 	background-color: '#131316';
 }
@@ -288,7 +295,7 @@ p {
 a {
 	text-decoration: none !important;
 }
-.dd {
+.textColorespeciall {
 	background-image: linear-gradient(
 		to right,
 		#bbbbbb 5%,

@@ -9,6 +9,7 @@ import mizban from '../icons/mizban.png';
 import maya from '../icons/maya.png';
 import chia from '../icons/chia.png';
 import perprok from '../icons/perperook.png';
+import hadish from '../icons/hadishLogo.png';
 import Footer from '../component/footerInfo';
 import HeaderChanger from '../component/headChanger';
 import './mainPage.css';
@@ -16,7 +17,7 @@ const ResturantPage2 = () => {
 	return (
 		<>
 			<div className='w-100 d-flex flex-row flex-wrap justify-content-lg-start justify-content-center bg-color'>
-				<HeaderChanger />
+				<HeaderChanger titleName='' image={hadish} />
 				<Link
 					to={'/resturantPage/burgerLand'}
 					className={'col-lg-4 col-sm-6  col-11 px-2 h-8-5rem mb-2'}
@@ -44,17 +45,17 @@ const ResturantPage2 = () => {
 					/>
 				</Link>
 				<Link
-					to={'/resturantPage/chia'}
+					to={'/resturantPage/perprok'}
 					className={
 						'col-lg-4 col-sm-6  col-11 px-2 h-8-5rem mb-2 mt-md-0 mt-2'
 					}
 				>
 					<ResturantCards
-						photo={chia}
-						Name={<>چیا</>}
-						item1={<>سالاد</>}
-						item2={<>شربت</>}
-						massage={'items less than 3'}
+						photo={perprok}
+						Name={<>پرپروک</>}
+						item1={<>پیتزا</>}
+						item2={<>ساندویج</>}
+						item3={<>سوخاری</>}
 					/>
 				</Link>
 				<Link
@@ -108,17 +109,17 @@ const ResturantPage2 = () => {
 					/>
 				</Link>
 				<Link
-					to={'/resturantPage/perprok'}
+					to={'/resturantPage/chia'}
 					className={
 						'col-lg-4 col-sm-6  col-11 px-2 h-8-5rem mt-sm-2 mt-3 mb-sm-0 mb-3'
 					}
 				>
 					<ResturantCards
-						photo={perprok}
-						Name={<>پرپروک</>}
-						item1={<>پیتزا</>}
-						item2={<>ساندویج</>}
-						item3={<>سوخاری</>}
+						photo={chia}
+						Name={<>چیا</>}
+						item1={<>سالاد</>}
+						item2={<>شربت</>}
+						massage={'items less than 3'}
 					/>
 				</Link>
 				<Footer />

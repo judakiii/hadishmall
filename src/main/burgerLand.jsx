@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import FoodCards from '../component/foodCards';
 import HeadMenu from '../component/headMenu';
 import TitleFood from '../component/titleFood';
 import HeaderChanger from '../component/headChanger';
+import burgerLand from '../icons/burgerLand.png';
 import {
 	Pizza,
 	Burger,
@@ -15,13 +16,19 @@ import {
 } from '../DATA/burgerLand';
 import './mainPage.css';
 const BurgerLand = () => {
+	const [start, setStart] = useState(true);
+	setTimeout(() => {
+		setStart(false);
+	}, 1);
 	return (
 		<>
 			<div
 				id='top'
-				className='w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-color'
+				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-color ${
+					start === true ? 'position-fixed' : ''
+				}`}
 			>
-				<HeaderChanger />
+				<HeaderChanger titleName='برگرلند' image={burgerLand} />
 				<HeadMenu
 					pizza='T'
 					burger='T'

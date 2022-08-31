@@ -24,7 +24,7 @@ const ResturantPage = () => {
 	return (
 		<>
 			<div className='w-100 d-flex flex-row flex-wrap justify-content-lg-start justify-content-center bg-color'>
-				<HeaderChanger />
+				<HeaderChanger titleName='' image={hadish} />
 				<Link
 					to={'/resturantPage/burgerLand'}
 					className={

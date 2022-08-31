@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import FoodCards from '../component/foodCards';
 import HeadMenu from '../component/headMenu';
 import HeaderChanger from '../component/headChanger';
 import TitleFood from '../component/titleFood';
+import maya from '../icons/maya.png';
 import {
 	Appetizer,
 	Drink,
@@ -14,13 +15,19 @@ import {
 } from '../DATA/maya';
 import './mainPage.css';
 const Maya = () => {
+	const [start, setStart] = useState(true);
+	setTimeout(() => {
+		setStart(false);
+	}, 1);
 	return (
 		<>
 			<div
 				id='top'
-				className='w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-color'
+				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-color  ${
+					start === true ? 'position-fixed' : ''
+				}`}
 			>
-				<HeaderChanger />
+				<HeaderChanger titleName='مایا' image={maya} />
 				<HeadMenu
 					pizza='T'
 					sandwich='T'

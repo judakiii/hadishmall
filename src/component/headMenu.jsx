@@ -29,7 +29,7 @@ import '../main/mainPage.css';
 const HeadMenu = (props) => {
 	return (
 		<>
-			<header className='w-100 h-7rem header d-flex flex-row justify-content-start align-items-center scroll-x mb-4'>
+			<header className='w-100 h-7rem header d-flex flex-row justify-content-start align-items-center scroll-x mb-4 hideScroll'>
 				{props.pizza === 'T' ? (
 					<>
 						<a

@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import FoodCards from '../component/foodCards';
 import HeaderChanger from '../component/headChanger';
 import HeadMenu from '../component/headMenu';
 import TitleFood from '../component/titleFood';
+import saj from '../icons/saj.png';
 import {
 	Appetizer,
 	Child,
@@ -15,13 +16,19 @@ import {
 } from '../DATA/saj';
 import './mainPage.css';
 const Saj = () => {
+	const [start, setStart] = useState(true);
+	setTimeout(() => {
+		setStart(false);
+	}, 1);
 	return (
 		<>
 			<div
 				id='top'
-				className='w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-color'
+				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-color  ${
+					start === true ? 'position-fixed' : ''
+				}`}
 			>
-				<HeaderChanger />
+				<HeaderChanger image={saj} />
 				<HeadMenu
 					pizza='T'
 					pasta='T'
