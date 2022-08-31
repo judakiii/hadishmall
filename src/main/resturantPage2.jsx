@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ResturantCards from '../component/resturantCards';
 import burgerLand from '../icons/burgerLand.png';
 import anatolia from '../icons/anatolia.png';

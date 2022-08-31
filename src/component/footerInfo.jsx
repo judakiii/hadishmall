@@ -7,10 +7,10 @@ const Footer = () => {
 			<div className='w-100 d-flex flex-column' style={{ height: '22rem' }}>
 				<div className=' d-flex flex-row justify-content-start align-items-center pt-5'>
 					<div className='widthOfwelcomeLogo d-flex flex-row justify-content-center align-items-center border-left border-white'>
-						<img src={hadish} className='w-75 h-75' />
+						<img src={hadish} className='w-75 h-75' alt='' />
 					</div>
 					<div className='widthOfwelcomeLogo d-flex flex-row justify-content-center align-items-center'>
-						<img src={joodco} className='w-75 h-75' />
+						<img src={joodco} className='w-75 h-75' alt='' />
 					</div>
 				</div>
 				<div

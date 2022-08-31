@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ResturantCards from '../component/resturantCards';
 import burgerLand from '../icons/burgerLand.png';
 import anatolia from '../icons/anatolia.png';
@@ -157,10 +157,10 @@ const ResturantPage = () => {
 						<span className='fs-2rem mb-5'>خوش آمدید</span>
 						<div className=' d-flex flex-row justify-content-start align-items-center'>
 							<div className='widthOfwelcomeLogo d-flex flex-row justify-content-center align-items-center border-left border-white'>
-								<img src={hadish} className='w-100 h-100' />
+								<img src={hadish} className='w-100 h-100' alt='' />
 							</div>
 							<div className='widthOfwelcomeLogo d-flex flex-row justify-content-center align-items-center'>
-								<img src={joodco} className='w-100 h-100' />
+								<img src={joodco} className='w-100 h-100' alt='' />
 							</div>
 						</div>
 					</div>

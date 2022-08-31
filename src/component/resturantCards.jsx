@@ -31,7 +31,7 @@ const ResturantCards = (props) => {
 						className='d-flex flex-row justify-content-center align-items-center'
 						style={{ width: '6.5rem' }}
 					>
-						<img src={props.photo} className='w-100 h-100' />
+						<img src={props.photo} className='w-100 h-100' alt='' />
 					</div>
 				</div>
 			</div>
