@@ -5,7 +5,7 @@
 * {
 	font-family: myfont;
 	color: aliceblue;
-	scroll-behavior: smooth;
+	/* scroll-behavior: smooth initial; */
 	direction: rtl !important;
 }
 html {
@@ -42,7 +42,7 @@ p {
 	margin: 0 !important;
 }
 #titleFood {
-	display: ruby !important;
+	/* display: ruby !important; */
 }
 .bg-test {
 	background-color: red !important;
@@ -142,6 +142,9 @@ p {
 } */
 .h-27rem {
 	height: 27rem !important;
+}
+.h-30rem {
+	height: 30rem !important;
 }
 /* .fs-0-5rem {
 	font-size: 0.5rem !important;

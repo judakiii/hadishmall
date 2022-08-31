@@ -142,7 +142,7 @@ const HeadMenu = (props) => {
 						>
 							<div className='insideOfbar'>
 								<img src={mexico} className='w-50 h-50' alt='' />
-								<p className='mt-1'>غذای مکزیکی</p>
+								<p className='mt-1'>مکزیکی</p>
 							</div>
 						</a>
 					</>

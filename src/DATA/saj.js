@@ -300,7 +300,7 @@ const Drink = [
 	},
 	{
 		photo: '',
-		name: 'آب پرتغال',
+		name: 'آب پرتقال',
 		details: '',
 		price: '',
 	},

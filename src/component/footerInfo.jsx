@@ -13,13 +13,7 @@ const Footer = () => {
 						<img src={joodco} className='w-75 h-75' alt='' />
 					</div>
 				</div>
-				<div
-					className='d-flex flex-row pr-4 pt-4'
-					style={{ textAlign: 'start' }}
-				>
-					پاسداران , میدان هروی , خیابان موسوی شرقی , پلاک 14 , هدیش مال
-				</div>
-				<div className='d-flex flex-row pr-4 pt-3'>
+				<div className='d-flex flex-row pr-4 pt-4'>
 					ساخته شده توسط : گروه جودکو
 				</div>
 				<div className='d-flex flex-row pr-4 pt-3'>ثبت سفارش : 09368081915</div>
