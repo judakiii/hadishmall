@@ -282,6 +282,9 @@ p {
 	animation-duration: 3s;
 	animation-fill-mode: forwards;
 }
+a {
+	text-decoration: none !important;
+}
 .dd {
 	background-image: linear-gradient(
 		to right,
