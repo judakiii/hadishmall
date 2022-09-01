@@ -4,6 +4,8 @@ import HeaderChanger from '../component/headChanger';
 import TitleFood from '../component/titleFood';
 import HeadMenu from '../component/headMenu';
 import chia from '../icons/chia.png';
+import BacktoHome from '../component/backTohome';
+import Footer from '../component/footerInfo';
 import { Appetizer, Drinks, Salad, Soup } from '../DATA/chia';
 import './mainPage.css';
 const Chia = () => {
@@ -19,6 +21,7 @@ const Chia = () => {
 					start === true ? 'position-fixed' : ''
 				}`}
 			>
+				<BacktoHome />
 				<HeaderChanger titleName='چیا' image={chia} />
 				<HeadMenu salad='T' soup='T' appetizer='T' drink='T' />
 				<TitleFood id='salad' titleName='سالاد' />
@@ -73,6 +76,7 @@ const Chia = () => {
 						</>
 					);
 				})}
+				<Footer />
 			</div>
 		</>
 	);

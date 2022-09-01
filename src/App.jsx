@@ -25,7 +25,7 @@ const App = () => {
 							<Route index element={<Mainpage />} />
 							<Route exact path='*' element={<Mainpage />} />
 							<Route exact path='/resturantPage' element={<Mainpage />} />
-							<Route exact path='/mainPage' element={<ResturantPage2 />} />
+							<Route exact path='/home' element={<ResturantPage2 />} />
 							<Route exact path='/resturantPage/mizban' element={<Mizban />} />
 							<Route
 								exact

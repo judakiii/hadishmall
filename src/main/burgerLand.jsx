@@ -4,6 +4,8 @@ import HeadMenu from '../component/headMenu';
 import TitleFood from '../component/titleFood';
 import HeaderChanger from '../component/headChanger';
 import burgerLand from '../icons/burgerLand.png';
+import BacktoHome from '../component/backTohome';
+import Footer from '../component/footerInfo';
 import {
 	Pizza,
 	Burger,
@@ -28,6 +30,7 @@ const BurgerLand = () => {
 					start === true ? 'position-fixed' : ''
 				}`}
 			>
+				<BacktoHome />
 				<HeaderChanger titleName='برگرلند' image={burgerLand} />
 				<HeadMenu
 					pizza='T'
@@ -143,6 +146,7 @@ const BurgerLand = () => {
 						</>
 					);
 				})}
+				<Footer />
 			</div>
 		</>
 	);

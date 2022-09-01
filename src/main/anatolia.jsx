@@ -4,6 +4,8 @@ import HeaderChanger from '../component/headChanger';
 import HeadMenu from '../component/headMenu';
 import TitleFood from '../component/titleFood';
 import anatolia from '../icons/anatolia.png';
+import BacktoHome from '../component/backTohome';
+import Footer from '../component/footerInfo';
 import {
 	Pideh,
 	beity,
@@ -29,6 +31,7 @@ const Anatolia = () => {
 					start === true ? 'position-fixed' : ''
 				}`}
 			>
+				<BacktoHome />
 				<HeaderChanger titleName='آناتولیا' image={anatolia} />
 				<HeadMenu
 					pideh='T'
@@ -157,6 +160,7 @@ const Anatolia = () => {
 						</>
 					);
 				})}
+				<Footer />
 			</div>
 		</>
 	);

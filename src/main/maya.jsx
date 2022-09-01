@@ -4,6 +4,8 @@ import HeadMenu from '../component/headMenu';
 import HeaderChanger from '../component/headChanger';
 import TitleFood from '../component/titleFood';
 import maya from '../icons/maya.png';
+import BacktoHome from '../component/backTohome';
+import Footer from '../component/footerInfo';
 import {
 	Appetizer,
 	Drink,
@@ -27,6 +29,7 @@ const Maya = () => {
 					start === true ? 'position-fixed' : ''
 				}`}
 			>
+				<BacktoHome />
 				<HeaderChanger titleName='مایا' image={maya} />
 				<HeadMenu
 					pizza='T'
@@ -128,6 +131,7 @@ const Maya = () => {
 						</>
 					);
 				})}
+				<Footer />
 			</div>
 		</>
 	);

@@ -4,6 +4,8 @@ import HeaderChanger from '../component/headChanger';
 import HeadMenu from '../component/headMenu';
 import TitleFood from '../component/titleFood';
 import perprok from '../icons/perperook.png';
+import BacktoHome from '../component/backTohome';
+import Footer from '../component/footerInfo';
 import {
 	Appetizer,
 	Burger,
@@ -26,6 +28,7 @@ const Perprok = () => {
 					start === true ? 'position-fixed' : ''
 				}`}
 			>
+				<BacktoHome />
 				<HeaderChanger titleName='پرپروک' image={perprok} />
 				<HeadMenu
 					pizza='T'
@@ -127,6 +130,7 @@ const Perprok = () => {
 						</>
 					);
 				})}
+				<Footer />
 			</div>
 		</>
 	);

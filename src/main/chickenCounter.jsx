@@ -4,6 +4,8 @@ import HeaderChanger from '../component/headChanger';
 import HeadMenu from '../component/headMenu';
 import TitleFood from '../component/titleFood';
 import chickenCounter from '../icons/chickenCounter.png';
+import BacktoHome from '../component/backTohome';
+import Footer from '../component/footerInfo';
 import { Appetizer, Drink, FriedChicken, Salad } from '../DATA/chickenCounter';
 import './mainPage.css';
 const ChickenCounter = () => {
@@ -19,6 +21,7 @@ const ChickenCounter = () => {
 					start === true ? 'position-fixed' : ''
 				}`}
 			>
+				<BacktoHome />
 				<HeaderChanger titleName='چیکن کانتر' image={chickenCounter} />
 				<HeadMenu
 					friedChicken='T'
@@ -92,6 +95,7 @@ const ChickenCounter = () => {
 						</>
 					);
 				})}
+				<Footer />
 			</div>
 		</>
 	);

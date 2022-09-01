@@ -4,6 +4,8 @@ import HeadMenu from '../component/headMenu';
 import TitleFood from '../component/titleFood';
 import HeaderChanger from '../component/headChanger';
 import mizban from '../icons/mizban.png';
+import BacktoHome from '../component/backTohome';
+import Footer from '../component/footerInfo';
 import {
 	Appetizer,
 	CheloKebab,
@@ -27,6 +29,7 @@ const Mizban = () => {
 					start === true ? 'position-fixed' : ''
 				}`}
 			>
+				<BacktoHome />
 				<HeaderChanger titleName='میزبان' image={mizban} />
 				<HeadMenu
 					// kebab='T'
@@ -143,6 +146,7 @@ const Mizban = () => {
 						</>
 					);
 				})}
+				<Footer />
 			</div>
 		</>
 	);

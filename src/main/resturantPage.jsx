@@ -20,7 +20,7 @@ const ResturantPage = () => {
 	const [start, setStart] = useState(true);
 	setTimeout(() => {
 		setStart(false);
-	}, 6500);
+	}, 6700);
 	return (
 		<>
 			<div className='w-100 d-flex flex-row flex-wrap justify-content-lg-start justify-content-center bg-color'>

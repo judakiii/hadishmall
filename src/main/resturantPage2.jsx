@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ResturantCards from '../component/resturantCards';
 import burgerLand from '../icons/burgerLand.png';
@@ -14,9 +14,17 @@ import Footer from '../component/footerInfo';
 import HeaderChanger from '../component/headChanger';
 import './mainPage.css';
 const ResturantPage2 = () => {
+	const [start, setStart] = useState(true);
+	setTimeout(() => {
+		setStart(false);
+	}, 1);
 	return (
 		<>
-			<div className='w-100 d-flex flex-row flex-wrap justify-content-lg-start justify-content-center bg-color'>
+			<div
+				className={`w-100 d-flex flex-row flex-wrap justify-content-lg-start justify-content-center bg-color ${
+					start === true ? 'position-fixed' : ''
+				}`}
+			>
 				<HeaderChanger titleName='' image={hadish} />
 				<Link
 					to={'/resturantPage/burgerLand'}
