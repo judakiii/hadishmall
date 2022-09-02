@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hadishmall/static/css/main.e302774f.css",
-    "main.js": "/hadishmall/static/js/main.12674036.js",
+    "main.css": "/hadishmall/static/css/main.19c38f7a.css",
+    "main.js": "/hadishmall/static/js/main.25f7255d.js",
     "static/js/268.897a91b3.chunk.js": "/hadishmall/static/js/268.897a91b3.chunk.js",
     "static/js/787.95a3467c.chunk.js": "/hadishmall/static/js/787.95a3467c.chunk.js",
     "static/media/chia.png": "/hadishmall/static/media/chia.f85ca5a1ccabcc791cde.png",
@@ -42,13 +42,13 @@
     "static/media/khoresht.png": "/hadishmall/static/media/khoresht.d4c739a36b10713b5726.png",
     "static/media/drink.png": "/hadishmall/static/media/drink.1bbd96ffc111af72989d.png",
     "index.html": "/hadishmall/index.html",
-    "main.e302774f.css.map": "/hadishmall/static/css/main.e302774f.css.map",
-    "main.12674036.js.map": "/hadishmall/static/js/main.12674036.js.map",
+    "main.19c38f7a.css.map": "/hadishmall/static/css/main.19c38f7a.css.map",
+    "main.25f7255d.js.map": "/hadishmall/static/js/main.25f7255d.js.map",
     "268.897a91b3.chunk.js.map": "/hadishmall/static/js/268.897a91b3.chunk.js.map",
     "787.95a3467c.chunk.js.map": "/hadishmall/static/js/787.95a3467c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e302774f.css",
-    "static/js/main.12674036.js"
+    "static/css/main.19c38f7a.css",
+    "static/js/main.25f7255d.js"
   ]
 }
