@@ -4,6 +4,7 @@ import HeaderChanger from '../component/headChanger';
 import HeadMenu from '../component/headMenu';
 import TitleFood from '../component/titleFood';
 import saj from '../icons/saj.png';
+import BacktoHome from '../component/backTohome';
 import {
 	Appetizer,
 	Child,
@@ -28,6 +29,7 @@ const Saj = () => {
 					start === true ? 'position-fixed' : ''
 				}`}
 			>
+				<BacktoHome />
 				<HeaderChanger image={saj} />
 				<HeadMenu
 					pizza='T'

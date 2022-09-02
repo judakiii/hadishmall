@@ -7,13 +7,6 @@
 	color: aliceblue;
 	direction: rtl !important;
 }
-.hideScroll::-webkit-scrollbar {
-	display: none !important;
-}
-.hideScroll {
-	-ms-overflow-style: none;
-	scrollbar-width: none;
-}
 html {
 	background-color: '#131316';
 }
@@ -50,8 +43,12 @@ a {
 p {
 	margin: 0 !important;
 }
-.bg-test {
-	background-color: red !important;
+.hideScroll::-webkit-scrollbar {
+	display: none !important;
+}
+.hideScroll {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
 .buttonActive {
 	background-color: orange !important;
@@ -163,22 +160,22 @@ p {
 }
 .backTohome {
 	position: fixed !important;
-	width: 4rem !important;
-	height: 4rem !important;
+	width: 3.5rem !important;
+	height: 3.5rem !important;
 	background-color: black !important;
 	bottom: 2rem;
 	left: 1.25rem;
 }
 .backTotop {
 	position: fixed !important;
-	width: 4rem !important;
-	height: 4rem !important;
+	width: 3.5rem !important;
+	height: 3.5rem !important;
 	background-color: black !important;
-	bottom: 7rem;
+	bottom: 6rem;
 	left: 1.25rem;
 }
 .widthOfwelcomeLogo {
-	width: 10rem !important;
+	width: 8rem !important;
 }
 .moneyBox {
 	margin-bottom: 0.25rem !important;
