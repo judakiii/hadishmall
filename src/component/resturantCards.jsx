@@ -8,20 +8,20 @@ const ResturantCards = (props) => {
 					<span className='title-font'>{props.Name}</span>
 					<br />
 					<div className='d-flex flex-row flex-wrap justify-content-start w-100 pt-3'>
-						<p className='grayColor fs-0-85rem d-flex flex-column align-items-start ml-2 p-0'>
+						<p className='Text-gray fs-0-85rem d-flex flex-column align-items-start ml-2 p-0'>
 							{props.item1}
 						</p>
-						<p className='grayColor fs-0-85rem d-flex flex-column align-items-start ml-2'>
+						<p className='Text-gray fs-0-85rem d-flex flex-column align-items-start ml-2'>
 							{props.item2}
 						</p>
 						{props.massage !== 'items less than 3' ? (
 							<>
-								<p className='grayColor fs-0-85rem d-flex flex-column align-items-start ml-2 p-0'>
+								<p className='Text-gray fs-0-85rem d-flex flex-column align-items-start ml-2 p-0'>
 									{props.item3}
 								</p>
 							</>
 						) : null}
-						<p className='grayColor fs-0-85rem d-flex flex-column align-items-start ml-2 p-0'>
+						<p className='Text-gray fs-0-85rem d-flex flex-column align-items-start ml-2 p-0'>
 							...
 						</p>
 					</div>

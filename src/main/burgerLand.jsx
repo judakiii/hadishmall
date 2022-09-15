@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import FoodCards from '../component/foodCards';
 import HeadMenu from '../component/headMenu';
 import TitleFood from '../component/titleFood';
 import HeaderChanger from '../component/headChanger';
 import burgerLand from '../icons/burgerLand.png';
-import BacktoHome from '../component/backTohome';
+import Appcontext from '../Appcontext';
 import Footer from '../component/footerInfo';
 import {
 	Pizza,
@@ -26,11 +26,10 @@ const BurgerLand = () => {
 		<>
 			<div
 				id='top'
-				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-color ${
+				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-main-dark ${
 					start === true ? 'position-fixed' : ''
 				}`}
 			>
-				<BacktoHome />
 				<HeaderChanger titleName='برگرلند' image={burgerLand} />
 				<HeadMenu
 					pizza='T'
@@ -43,7 +42,7 @@ const BurgerLand = () => {
 					drink='T'
 				/>
 				<TitleFood id='pizza' titleName='پیتزا' />
-				{Pizza.map((items) => {
+				{Pizza.map((items, index) => {
 					return (
 						<>
 							<FoodCards
@@ -51,6 +50,7 @@ const BurgerLand = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'burgerLand'}
 							/>
 						</>
 					);
@@ -64,6 +64,7 @@ const BurgerLand = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'burgerLand'}
 							/>
 						</>
 					);
@@ -77,6 +78,7 @@ const BurgerLand = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'burgerLand'}
 							/>
 						</>
 					);
@@ -90,6 +92,7 @@ const BurgerLand = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'burgerLand'}
 							/>
 						</>
 					);
@@ -103,6 +106,7 @@ const BurgerLand = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'burgerLand'}
 							/>
 						</>
 					);
@@ -116,6 +120,7 @@ const BurgerLand = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'burgerLand'}
 							/>
 						</>
 					);
@@ -129,6 +134,7 @@ const BurgerLand = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'burgerLand'}
 							/>
 						</>
 					);
@@ -142,6 +148,7 @@ const BurgerLand = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'burgerLand'}
 							/>
 						</>
 					);

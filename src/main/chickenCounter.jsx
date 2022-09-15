@@ -17,11 +17,10 @@ const ChickenCounter = () => {
 		<>
 			<div
 				id='top'
-				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-color ${
+				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-main-dark ${
 					start === true ? 'position-fixed' : ''
 				}`}
 			>
-				<BacktoHome />
 				<HeaderChanger titleName='چیکن کانتر' image={chickenCounter} />
 				<HeadMenu
 					friedChicken='T'
@@ -39,6 +38,7 @@ const ChickenCounter = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'chickenCounter'}
 							/>
 						</>
 					);
@@ -52,6 +52,7 @@ const ChickenCounter = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'chickenCounter'}
 							/>
 						</>
 					);
@@ -65,6 +66,7 @@ const ChickenCounter = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'chickenCounter'}
 							/>
 						</>
 					);
@@ -78,6 +80,7 @@ const ChickenCounter = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'chickenCounter'}
 							/>
 						</>
 					);
@@ -91,6 +94,7 @@ const ChickenCounter = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'chickenCounter'}
 							/>
 						</>
 					);

@@ -7,7 +7,7 @@ const TitleFood = (props) => {
 				className='d-flex flex-row justify-content-between align-items-center col-12 h-7rem text-end mb-4'
 			>
 				<div className='col-12 d-flex flex-row justify-content-between align-items-center h-100 text-end'>
-					<span className='fs-2rem'>{props.titleName}</span>
+					<span className='fs-2-5rem'>{props.titleName}</span>
 				</div>
 			</div>
 		</>

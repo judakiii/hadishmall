@@ -27,11 +27,10 @@ const Anatolia = () => {
 		<>
 			<div
 				id='top'
-				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-color ${
+				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-main-dark ${
 					start === true ? 'position-fixed' : ''
 				}`}
 			>
-				<BacktoHome />
 				<HeaderChanger titleName='آناتولیا' image={anatolia} />
 				<HeadMenu
 					pideh='T'
@@ -52,6 +51,7 @@ const Anatolia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'anatolia'}
 							/>
 						</>
 					);
@@ -65,6 +65,7 @@ const Anatolia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'anatolia'}
 							/>
 						</>
 					);
@@ -78,6 +79,7 @@ const Anatolia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'anatolia'}
 							/>
 						</>
 					);
@@ -91,6 +93,7 @@ const Anatolia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'anatolia'}
 							/>
 						</>
 					);
@@ -104,6 +107,7 @@ const Anatolia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'anatolia'}
 							/>
 						</>
 					);
@@ -117,6 +121,7 @@ const Anatolia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'anatolia'}
 							/>
 						</>
 					);
@@ -130,6 +135,7 @@ const Anatolia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'anatolia'}
 							/>
 						</>
 					);
@@ -143,6 +149,7 @@ const Anatolia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'anatolia'}
 							/>
 						</>
 					);
@@ -156,6 +163,7 @@ const Anatolia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'anatolia'}
 							/>
 						</>
 					);

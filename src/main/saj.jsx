@@ -25,11 +25,10 @@ const Saj = () => {
 		<>
 			<div
 				id='top'
-				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-color  ${
+				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-main-dark  ${
 					start === true ? 'position-fixed' : ''
 				}`}
 			>
-				<BacktoHome />
 				<HeaderChanger image={saj} />
 				<HeadMenu
 					pizza='T'
@@ -50,6 +49,7 @@ const Saj = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'saj'}
 							/>
 						</>
 					);
@@ -63,6 +63,7 @@ const Saj = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'saj'}
 							/>
 						</>
 					);
@@ -76,6 +77,7 @@ const Saj = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'saj'}
 							/>
 						</>
 					);
@@ -89,6 +91,7 @@ const Saj = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'saj'}
 							/>
 						</>
 					);
@@ -102,6 +105,7 @@ const Saj = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'saj'}
 							/>
 						</>
 					);
@@ -115,6 +119,7 @@ const Saj = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'saj'}
 							/>
 						</>
 					);
@@ -128,6 +133,7 @@ const Saj = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'saj'}
 							/>
 						</>
 					);
@@ -141,6 +147,7 @@ const Saj = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'saj'}
 							/>
 						</>
 					);

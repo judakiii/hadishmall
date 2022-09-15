@@ -25,11 +25,10 @@ const Maya = () => {
 		<>
 			<div
 				id='top'
-				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-color  ${
+				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-main-dark  ${
 					start === true ? 'position-fixed' : ''
 				}`}
 			>
-				<BacktoHome />
 				<HeaderChanger titleName='مایا' image={maya} />
 				<HeadMenu
 					pizza='T'
@@ -49,6 +48,7 @@ const Maya = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'maya'}
 							/>
 						</>
 					);
@@ -62,6 +62,7 @@ const Maya = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'maya'}
 							/>
 						</>
 					);
@@ -75,6 +76,7 @@ const Maya = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'maya'}
 							/>
 						</>
 					);
@@ -88,6 +90,7 @@ const Maya = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'maya'}
 							/>
 						</>
 					);
@@ -101,6 +104,7 @@ const Maya = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'maya'}
 							/>
 						</>
 					);
@@ -114,6 +118,7 @@ const Maya = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'maya'}
 							/>
 						</>
 					);
@@ -127,6 +132,7 @@ const Maya = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'maya'}
 							/>
 						</>
 					);

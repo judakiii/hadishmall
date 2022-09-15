@@ -23,7 +23,7 @@ const ResturantPage = () => {
 	}, 6500);
 	return (
 		<>
-			<div className='w-100 d-flex flex-row flex-wrap justify-content-lg-start justify-content-center bg-color'>
+			<div className='w-100 d-flex flex-row flex-wrap justify-content-lg-start justify-content-center bg-main-dark'>
 				<HeaderChanger titleName='' image={hadish} />
 				<Link
 					to={'/resturantPage/burgerLand'}
@@ -154,7 +154,7 @@ const ResturantPage = () => {
 						className='w-100 d-flex flex-column justify-content-center align-items-center glassmorphism rounded-0 position-absolute fadeMe'
 						style={{ height: '100vh' }}
 					>
-						<span className='fs-2rem mb-5'>خوش آمدید</span>
+						<span className='fs-2-5rem mb-5'>خوش آمدید</span>
 						<div className=' d-flex flex-row justify-content-start align-items-center'>
 							<div className='widthOfwelcomeLogo d-flex flex-row justify-content-center align-items-center border-left border-white'>
 								<img src={hadish} className='w-100 h-100' alt='' />

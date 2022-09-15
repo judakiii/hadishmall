@@ -24,11 +24,10 @@ const Perprok = () => {
 	return (
 		<>
 			<div
-				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-color  ${
+				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-main-dark  ${
 					start === true ? 'position-fixed' : ''
 				}`}
 			>
-				<BacktoHome />
 				<HeaderChanger titleName='پرپروک' image={perprok} />
 				<HeadMenu
 					pizza='T'
@@ -48,6 +47,7 @@ const Perprok = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'perprok'}
 							/>
 						</>
 					);
@@ -61,6 +61,7 @@ const Perprok = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'perprok'}
 							/>
 						</>
 					);
@@ -74,6 +75,7 @@ const Perprok = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'perprok'}
 							/>
 						</>
 					);
@@ -87,6 +89,7 @@ const Perprok = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'perprok'}
 							/>
 						</>
 					);
@@ -100,6 +103,7 @@ const Perprok = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'perprok'}
 							/>
 						</>
 					);
@@ -113,6 +117,7 @@ const Perprok = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'perprok'}
 							/>
 						</>
 					);
@@ -126,6 +131,7 @@ const Perprok = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'perprok'}
 							/>
 						</>
 					);

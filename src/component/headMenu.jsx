@@ -36,7 +36,7 @@ const HeadMenu = (props) => {
 							href='#pizza'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={pizza} className='w-50 h-50' alt='' />
 								<p className='mt-1'>پیتزا</p>
 							</div>
@@ -49,7 +49,7 @@ const HeadMenu = (props) => {
 							href='#pideh'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={pideh} className='w-50 h-50' alt='' />
 								<p className='mt-1'>پیده</p>
 							</div>
@@ -62,7 +62,7 @@ const HeadMenu = (props) => {
 							href='#beity'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={beity} className='w-50 h-50' alt='' />
 								<p className='mt-1'>بیتی</p>
 							</div>
@@ -75,7 +75,7 @@ const HeadMenu = (props) => {
 							href='#lahamjon'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={lahamjon} className='w-50 h-50' alt='' />
 								<p className='mt-1'>لهمجون</p>
 							</div>
@@ -88,7 +88,7 @@ const HeadMenu = (props) => {
 							href='#burger'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={burger} className='w-50 h-50' alt='' />
 								<p className='mt-1'>برگر</p>
 							</div>
@@ -101,7 +101,7 @@ const HeadMenu = (props) => {
 							href='#sandwich'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={sandwich} className='w-50 h-50' alt='' />
 								<p className='mt-1'>ساندویچ</p>
 							</div>
@@ -114,7 +114,7 @@ const HeadMenu = (props) => {
 							href='#doner'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={doner} className='w-50 h-50' alt='' />
 								<p className='mt-1'>دونر</p>
 							</div>
@@ -127,7 +127,7 @@ const HeadMenu = (props) => {
 							href='#taco'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={taco} className='w-50 h-50' alt='' />
 								<p className='mt-1'>تاکو</p>
 							</div>
@@ -140,7 +140,7 @@ const HeadMenu = (props) => {
 							href='#mexicanFood'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={mexico} className='w-50 h-50' alt='' />
 								<p className='mt-1'>مکزیکی</p>
 							</div>
@@ -153,7 +153,7 @@ const HeadMenu = (props) => {
 							href='#spaghetti'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={spaghetti} className='w-50 h-50' alt='' />
 								<p className='mt-1'>پاستا</p>
 							</div>
@@ -166,7 +166,7 @@ const HeadMenu = (props) => {
 							href='#friedChicken'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={friedChicken} className='w-50 h-50' alt='' />
 								<p className='mt-1'>سوخاری</p>
 							</div>
@@ -179,7 +179,7 @@ const HeadMenu = (props) => {
 							href='#kebab'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={kebab} className='w-50 h-50' alt='' />
 								<p className='mt-1'>کباب</p>
 							</div>
@@ -192,7 +192,7 @@ const HeadMenu = (props) => {
 							href='#breadKebab'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={breadKebab} className='w-50 h-50' alt='' />
 								<p className='mt-1'>کباب نون</p>
 							</div>
@@ -205,7 +205,7 @@ const HeadMenu = (props) => {
 							href='#cheloKebab'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={cheloKebab} className='w-50 h-50' alt='' />
 								<p className='mt-1'>چلو کباب</p>
 							</div>
@@ -218,7 +218,7 @@ const HeadMenu = (props) => {
 							href='#cheloKhoresht'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={cheloKhoresht} className='w-50 h-50' alt='' />
 								<p className='mt-1'>چلو خورشت</p>
 							</div>
@@ -231,7 +231,7 @@ const HeadMenu = (props) => {
 							href='#khorak'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={khorak} className='w-50 h-50' alt='' />
 								<p className='mt-1'>خوراک</p>
 							</div>
@@ -244,7 +244,7 @@ const HeadMenu = (props) => {
 							href='#khoresht'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={khoresht} className='w-50 h-50' alt='' />
 								<p className='mt-1'>خورشت</p>
 							</div>
@@ -257,7 +257,7 @@ const HeadMenu = (props) => {
 							href='#persianFood'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={persianFood} className='w-50 h-50' alt='' />
 								<p className='mt-1'>ایرانی</p>
 							</div>
@@ -270,7 +270,7 @@ const HeadMenu = (props) => {
 							href='#steak'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={steak} className='w-50 h-50' alt='' />
 								<p className='mt-1'>استیک</p>
 							</div>
@@ -283,7 +283,7 @@ const HeadMenu = (props) => {
 							href='#seaFood'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={fish} className='w-50 h-50' alt='' />
 								<p className='mt-1'>غذای دریایی</p>
 							</div>
@@ -296,7 +296,7 @@ const HeadMenu = (props) => {
 							href='#child'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={child} className='w-50 h-50' alt='' />
 								<p className='mt-1'>کودک</p>
 							</div>
@@ -309,7 +309,7 @@ const HeadMenu = (props) => {
 							href='#salad'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={salad} className='w-50 h-50' alt='' />
 								<p className='mt-1'>سالاد</p>
 							</div>
@@ -322,7 +322,7 @@ const HeadMenu = (props) => {
 							href='#soup'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={soup} className='w-50 h-50' alt='' />
 								<p className='mt-1'>سوپ</p>
 							</div>
@@ -335,7 +335,7 @@ const HeadMenu = (props) => {
 							href='#desser'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={desser} className='w-50 h-50' alt='' />
 								<p className='mt-1'>دسر</p>
 							</div>
@@ -348,7 +348,7 @@ const HeadMenu = (props) => {
 							href='#appetizer'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={appetizer} className='w-50 h-50' alt='' />
 								<p className='mt-1'>پیش غذا</p>
 							</div>
@@ -361,7 +361,7 @@ const HeadMenu = (props) => {
 							href='#drink'
 							className='bar glassmorphism d-flex flex-column justify-content-center align-items-center mx-2'
 						>
-							<div className='insideOfbar'>
+							<div className='width-height-5rem d-flex flex-column justify-content-center align-items-center'>
 								<img src={drink} className='w-50 h-50' alt='' />
 								<p className='mt-1'>نوشیدنی</p>
 							</div>

@@ -17,11 +17,10 @@ const Chia = () => {
 		<>
 			<div
 				id='top'
-				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-color ${
+				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-main-dark ${
 					start === true ? 'position-fixed' : ''
 				}`}
 			>
-				<BacktoHome />
 				<HeaderChanger titleName='چیا' image={chia} />
 				<HeadMenu salad='T' soup='T' appetizer='T' drink='T' />
 				<TitleFood id='salad' titleName='سالاد' />
@@ -33,6 +32,7 @@ const Chia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'chia'}
 							/>
 						</>
 					);
@@ -46,6 +46,7 @@ const Chia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'chia'}
 							/>
 						</>
 					);
@@ -59,6 +60,7 @@ const Chia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'chia'}
 							/>
 						</>
 					);
@@ -72,6 +74,7 @@ const Chia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
+								nameOfRestaurant={'chia'}
 							/>
 						</>
 					);

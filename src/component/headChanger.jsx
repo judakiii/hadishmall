@@ -4,7 +4,7 @@ const HeaderChanger = (props) => {
 	return (
 		<>
 			<div
-				className='w-100 d-flex flex-row h-8rem'
+				className='w-100 d-flex flex-row h-10rem'
 				style={{ paddingLeft: '15px', paddingRight: '15px' }}
 			>
 				<div className='col-12 d-flex flex-row align-items-center justify-content-between h-100'>

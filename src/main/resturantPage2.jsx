@@ -21,7 +21,7 @@ const ResturantPage2 = () => {
 	return (
 		<>
 			<div
-				className={`w-100 d-flex flex-row flex-wrap justify-content-lg-start justify-content-center bg-color ${
+				className={`w-100 d-flex flex-row flex-wrap justify-content-lg-start justify-content-center bg-main-dark ${
 					start === true ? 'position-fixed' : ''
 				}`}
 			>
