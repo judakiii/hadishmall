@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/hadishmall/static/css/main.19c38f7a.css",
-    "main.js": "/hadishmall/static/js/main.25f7255d.js",
-    "static/js/268.897a91b3.chunk.js": "/hadishmall/static/js/268.897a91b3.chunk.js",
+    "main.css": "/hadishmall/static/css/main.74a3c6de.css",
+    "main.js": "/hadishmall/static/js/main.548ce533.js",
+    "static/js/268.9ee5e956.chunk.js": "/hadishmall/static/js/268.9ee5e956.chunk.js",
     "static/js/787.95a3467c.chunk.js": "/hadishmall/static/js/787.95a3467c.chunk.js",
     "static/media/chia.png": "/hadishmall/static/media/chia.f85ca5a1ccabcc791cde.png",
     "static/media/chickenCounter.png": "/hadishmall/static/media/chickenCounter.796592761fcab57f8287.png",
@@ -42,13 +42,13 @@
     "static/media/khoresht.png": "/hadishmall/static/media/khoresht.d4c739a36b10713b5726.png",
     "static/media/drink.png": "/hadishmall/static/media/drink.1bbd96ffc111af72989d.png",
     "index.html": "/hadishmall/index.html",
-    "main.19c38f7a.css.map": "/hadishmall/static/css/main.19c38f7a.css.map",
-    "main.25f7255d.js.map": "/hadishmall/static/js/main.25f7255d.js.map",
-    "268.897a91b3.chunk.js.map": "/hadishmall/static/js/268.897a91b3.chunk.js.map",
+    "main.74a3c6de.css.map": "/hadishmall/static/css/main.74a3c6de.css.map",
+    "main.548ce533.js.map": "/hadishmall/static/js/main.548ce533.js.map",
+    "268.9ee5e956.chunk.js.map": "/hadishmall/static/js/268.9ee5e956.chunk.js.map",
     "787.95a3467c.chunk.js.map": "/hadishmall/static/js/787.95a3467c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19c38f7a.css",
-    "static/js/main.25f7255d.js"
+    "static/css/main.74a3c6de.css",
+    "static/js/main.548ce533.js"
   ]
 }
