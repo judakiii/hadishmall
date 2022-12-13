@@ -1,35 +1,39 @@
-import React, { useState } from 'react';
-import FoodCards from '../component/foodCards';
-import HeaderChanger from '../component/headChanger';
-import HeadMenu from '../component/headMenu';
-import TitleFood from '../component/titleFood';
-import chickenCounter from '../icons/chickenCounter.png';
-import BacktoHome from '../component/backTohome';
-import Footer from '../component/footerInfo';
-import { Appetizer, Drink, FriedChicken, Salad } from '../DATA/chickenCounter';
-import './mainPage.css';
+import React, { useEffect } from "react";
+import FoodCards from "../component/foodCards";
+import HeaderChanger from "../component/headChanger";
+import HeadMenu from "../component/headMenu";
+import TitleFood from "../component/titleFood";
+import chickenCounter from "../icons/chickenCounter.png";
+import BacktoHome from "../component/backTohome";
+import Footer from "../component/footerInfo";
+import { Appetizer, Drink, FriedChicken, Salad } from "../DATA/chickenCounter";
+import * as $ from "jquery";
+import "./mainPage.css";
+import jquery from "jquery";
 const ChickenCounter = () => {
-	const [start, setStart] = useState(true);
-	setTimeout(() => {
-		setStart(false);
-	}, 1);
+	useEffect(() => {
+		jquery("document").ready(() => {
+			window.scroll({
+				top: 0,
+				behavior: "smooth",
+			});
+		});
+	}, []);
 	return (
 		<>
 			<div
-				id='top'
-				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-main-dark ${
-					start === true ? 'position-fixed' : ''
-				}`}
+				id="top"
+				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-main-dark`}
 			>
-				<HeaderChanger titleName='چیکن کانتر' image={chickenCounter} />
+				<HeaderChanger titleName="چیکن کانتر" image={chickenCounter} />
 				<HeadMenu
-					friedChicken='T'
-					sandwich='T'
-					salad='T'
-					appetizer='T'
-					drink='T'
+					friedChicken="T"
+					sandwich="T"
+					salad="T"
+					appetizer="T"
+					drink="T"
 				/>
-				<TitleFood id='sandwich' titleName='ساندویچ' />
+				<TitleFood id="sandwich" titleName="ساندویچ" />
 				{Salad.map((items) => {
 					return (
 						<>
@@ -38,12 +42,14 @@ const ChickenCounter = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'chickenCounter'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"chickenCounter"}
 							/>
 						</>
 					);
 				})}
-				<TitleFood id='friedChicken' titleName='سوخاری' />
+				<TitleFood id="friedChicken" titleName="سوخاری" />
 				{FriedChicken.map((items) => {
 					return (
 						<>
@@ -52,12 +58,14 @@ const ChickenCounter = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'chickenCounter'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"chickenCounter"}
 							/>
 						</>
 					);
 				})}
-				<TitleFood id='salad' titleName='سالاد' />
+				<TitleFood id="salad" titleName="سالاد" />
 				{Salad.map((items) => {
 					return (
 						<>
@@ -66,12 +74,14 @@ const ChickenCounter = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'chickenCounter'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"chickenCounter"}
 							/>
 						</>
 					);
 				})}
-				<TitleFood id='appetizer' titleName='پیش غذا' />
+				<TitleFood id="appetizer" titleName="پیش غذا" />
 				{Appetizer.map((items) => {
 					return (
 						<>
@@ -80,12 +90,14 @@ const ChickenCounter = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'chickenCounter'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"chickenCounter"}
 							/>
 						</>
 					);
 				})}
-				<TitleFood id='drink' titleName='نوشیدنی' />
+				<TitleFood id="drink" titleName="نوشیدنی" />
 				{Drink.map((items) => {
 					return (
 						<>
@@ -94,7 +106,9 @@ const ChickenCounter = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'chickenCounter'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"chickenCounter"}
 							/>
 						</>
 					);

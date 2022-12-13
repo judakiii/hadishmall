@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-import FoodCards from '../component/foodCards';
-import HeaderChanger from '../component/headChanger';
-import HeadMenu from '../component/headMenu';
-import TitleFood from '../component/titleFood';
-import anatolia from '../icons/anatolia.png';
-import BacktoHome from '../component/backTohome';
-import Footer from '../component/footerInfo';
+import React, { useEffect, useState } from "react";
+import FoodCards from "../component/foodCards";
+import HeaderChanger from "../component/headChanger";
+import HeadMenu from "../component/headMenu";
+import TitleFood from "../component/titleFood";
+import anatolia from "../icons/anatolia.png";
+import BacktoHome from "../component/backTohome";
+import Footer from "../component/footerInfo";
+import * as $ from "jquery";
 import {
 	Pideh,
 	beity,
@@ -16,33 +17,36 @@ import {
 	appetizer,
 	desser,
 	drink,
-} from '../DATA/anatolia';
-import './mainPage.css';
+} from "../DATA/anatolia";
+import "./mainPage.css";
+import jquery from "jquery";
 const Anatolia = () => {
-	const [start, setStart] = useState(true);
-	setTimeout(() => {
-		setStart(false);
-	}, 1);
+	useEffect(() => {
+		jquery("document").ready(() => {
+			window.scroll({
+				top: 0,
+				behavior: "smooth",
+			});
+		});
+	}, []);
 	return (
 		<>
 			<div
-				id='top'
-				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-main-dark ${
-					start === true ? 'position-fixed' : ''
-				}`}
+				id="top"
+				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-main-dark`}
 			>
-				<HeaderChanger titleName='آناتولیا' image={anatolia} />
+				<HeaderChanger titleName="آناتولیا" image={anatolia} />
 				<HeadMenu
-					pideh='T'
-					beity='T'
-					doner='T'
-					kebab='T'
-					lahamjon='T'
-					appetizer='T'
-					desser='T'
-					drink='T'
+					pideh="T"
+					beity="T"
+					doner="T"
+					kebab="T"
+					lahamjon="T"
+					appetizer="T"
+					desser="T"
+					drink="T"
 				/>
-				<TitleFood id='pideh' titleName='پیده' />
+				<TitleFood id="pideh" titleName="پیده" />
 				{Pideh.map((items) => {
 					return (
 						<>
@@ -51,12 +55,14 @@ const Anatolia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'anatolia'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"anatolia"}
 							/>
 						</>
 					);
 				})}
-				<TitleFood id='beity' titleName='بیتی' />
+				<TitleFood id="beity" titleName="بیتی" />
 				{beity.map((items) => {
 					return (
 						<>
@@ -65,12 +71,14 @@ const Anatolia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'anatolia'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"anatolia"}
 							/>
 						</>
 					);
 				})}
-				<TitleFood id='lahamjon' titleName='لهمجون' />
+				<TitleFood id="lahamjon" titleName="لهمجون" />
 				{lahamjon.map((items) => {
 					return (
 						<>
@@ -79,12 +87,14 @@ const Anatolia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'anatolia'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"anatolia"}
 							/>
 						</>
 					);
 				})}
-				<TitleFood id='doner' titleName='دونر' />
+				<TitleFood id="doner" titleName="دونر" />
 				{loghmeh.map((items) => {
 					return (
 						<>
@@ -93,12 +103,14 @@ const Anatolia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'anatolia'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"anatolia"}
 							/>
 						</>
 					);
 				})}
-				<TitleFood id='kebab' titleName='کباب' />
+				<TitleFood id="kebab" titleName="کباب" />
 				{kebab.map((items) => {
 					return (
 						<>
@@ -107,12 +119,14 @@ const Anatolia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'anatolia'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"anatolia"}
 							/>
 						</>
 					);
 				})}
-				<TitleFood id='salad' titleName='سالاد' />
+				<TitleFood id="salad" titleName="سالاد" />
 				{salad.map((items) => {
 					return (
 						<>
@@ -121,12 +135,14 @@ const Anatolia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'anatolia'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"anatolia"}
 							/>
 						</>
 					);
 				})}
-				<TitleFood id='desser' titleName='دسر' />
+				<TitleFood id="desser" titleName="دسر" />
 				{desser.map((items) => {
 					return (
 						<>
@@ -135,12 +151,14 @@ const Anatolia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'anatolia'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"anatolia"}
 							/>
 						</>
 					);
 				})}
-				<TitleFood id='appetizer' titleName='پیش غذا' />
+				<TitleFood id="appetizer" titleName="پیش غذا" />
 				{appetizer.map((items) => {
 					return (
 						<>
@@ -149,12 +167,14 @@ const Anatolia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'anatolia'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"anatolia"}
 							/>
 						</>
 					);
 				})}
-				<TitleFood id='drink' titleName='نوشیدنی' />
+				<TitleFood id="drink" titleName="نوشیدنی" />
 				{drink.map((items) => {
 					return (
 						<>
@@ -163,7 +183,9 @@ const Anatolia = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'anatolia'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"anatolia"}
 							/>
 						</>
 					);

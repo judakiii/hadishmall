@@ -11,7 +11,7 @@ import maya from '../icons/maya.png';
 import chia from '../icons/chia.png';
 import perprok from '../icons/perperook.png';
 import hadish from '../icons/hadishLogo.png';
-import joodco from '../icons/joodco.png';
+import joodco from '../icons/joodco2.png';
 import HeaderChanger from '../component/headChanger';
 import Footer from '../component/footerInfo';
 import './mainPage.css';
@@ -24,7 +24,7 @@ const ResturantPage = () => {
 	return (
 		<>
 			<div className='w-100 d-flex flex-row flex-wrap justify-content-lg-start justify-content-center bg-main-dark'>
-				<HeaderChanger titleName='' image={hadish} />
+				<HeaderChanger titleName='joodco' image={joodco} />
 				<Link
 					to={'/resturantPage/burgerLand'}
 					className={
@@ -156,12 +156,13 @@ const ResturantPage = () => {
 					>
 						<span className='fs-2-5rem mb-5'>خوش آمدید</span>
 						<div className=' d-flex flex-row justify-content-start align-items-center'>
-							<div className='widthOfwelcomeLogo d-flex flex-row justify-content-center align-items-center border-left border-white'>
+							{/* <div className='widthOfwelcomeLogo d-flex flex-row justify-content-center align-items-center border-left border-white'>
 								<img src={hadish} className='w-100 h-100' alt='' />
-							</div>
+							</div> */}
 							<div className='widthOfwelcomeLogo d-flex flex-row justify-content-center align-items-center'>
 								<img src={joodco} className='w-100 h-100' alt='' />
 							</div>
+							<span className='text-nowrap fs-2rem pr-3'>دیجی منو</span>
 						</div>
 					</div>
 				</>

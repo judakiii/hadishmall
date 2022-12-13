@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import FoodCards from '../component/foodCards';
-import HeaderChanger from '../component/headChanger';
-import HeadMenu from '../component/headMenu';
-import TitleFood from '../component/titleFood';
-import perprok from '../icons/perperook.png';
-import BacktoHome from '../component/backTohome';
-import Footer from '../component/footerInfo';
+import React, { useEffect } from "react";
+import FoodCards from "../component/foodCards";
+import HeaderChanger from "../component/headChanger";
+import HeadMenu from "../component/headMenu";
+import TitleFood from "../component/titleFood";
+import perprok from "../icons/perperook.png";
+import BacktoHome from "../component/backTohome";
+import Footer from "../component/footerInfo";
 import {
 	Appetizer,
 	Burger,
@@ -14,31 +14,35 @@ import {
 	Pizza,
 	Salad,
 	Sandwich,
-} from '../DATA/perprok';
-import './mainPage.css';
+} from "../DATA/perprok";
+import * as $ from "jquery";
+import "./mainPage.css";
+import jquery from "jquery";
 const Perprok = () => {
-	const [start, setStart] = useState(true);
-	setTimeout(() => {
-		setStart(false);
-	}, 1);
+	useEffect(() => {
+		jquery("document").ready(() => {
+			window.scroll({
+				top: 0,
+				behavior: "smooth",
+			});
+		});
+	}, []);
 	return (
 		<>
 			<div
-				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-main-dark  ${
-					start === true ? 'position-fixed' : ''
-				}`}
+				className={`w-100 d-flex flex-row flex-wrap justify-content-center align-items-start bg-main-dark`}
 			>
-				<HeaderChanger titleName='پرپروک' image={perprok} />
+				<HeaderChanger titleName="پرپروک" image={perprok} />
 				<HeadMenu
-					pizza='T'
-					burger='T'
-					sandwich='T'
-					friedChicken='T'
-					salad='T'
-					appetizer='T'
-					drink='T'
+					pizza="T"
+					burger="T"
+					sandwich="T"
+					friedChicken="T"
+					salad="T"
+					appetizer="T"
+					drink="T"
 				/>
-				<TitleFood id='pizza' titleName='پیتزا' />
+				<TitleFood id="pizza" titleName="پیتزا" />
 				{Pizza.map((items) => {
 					return (
 						<>
@@ -47,12 +51,14 @@ const Perprok = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'perprok'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"perprok"}
 							/>
 						</>
 					);
 				})}
-				<TitleFood id='burger' titleName='برگر' />
+				<TitleFood id="burger" titleName="برگر" />
 				{Burger.map((items) => {
 					return (
 						<>
@@ -61,12 +67,14 @@ const Perprok = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'perprok'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"perprok"}
 							/>
 						</>
 					);
 				})}
-				<TitleFood id='sandwich' titleName='ساندویچ' />
+				<TitleFood id="sandwich" titleName="ساندویچ" />
 				{Sandwich.map((items) => {
 					return (
 						<>
@@ -75,12 +83,14 @@ const Perprok = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'perprok'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"perprok"}
 							/>
 						</>
 					);
 				})}
-				<TitleFood id='friedChicken' titleName='سوخاری' />
+				<TitleFood id="friedChicken" titleName="سوخاری" />
 				{FriedChicken.map((items) => {
 					return (
 						<>
@@ -89,12 +99,14 @@ const Perprok = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'perprok'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"perprok"}
 							/>
 						</>
 					);
 				})}
-				<TitleFood id='salad' titleName='سالاد' />
+				<TitleFood id="salad" titleName="سالاد" />
 				{Salad.map((items) => {
 					return (
 						<>
@@ -103,12 +115,14 @@ const Perprok = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'perprok'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"perprok"}
 							/>
 						</>
 					);
 				})}
-				<TitleFood id='appetizer' titleName='پیش غذا' />
+				<TitleFood id="appetizer" titleName="پیش غذا" />
 				{Appetizer.map((items) => {
 					return (
 						<>
@@ -117,12 +131,14 @@ const Perprok = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'perprok'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"perprok"}
 							/>
 						</>
 					);
 				})}
-				<TitleFood id='drink' titleName='نوشیدنی' />
+				<TitleFood id="drink" titleName="نوشیدنی" />
 				{Drink.map((items) => {
 					return (
 						<>
@@ -131,7 +147,9 @@ const Perprok = () => {
 								Name={items.name}
 								Details={items.details}
 								Price={items.price}
-								nameOfRestaurant={'perprok'}
+								Count={items.count}
+								TotalPrice={items.totalPrice}
+								nameOfRestaurant={"perprok"}
 							/>
 						</>
 					);

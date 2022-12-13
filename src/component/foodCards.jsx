@@ -3,7 +3,15 @@ import noImage from '../icons/hadish.jpg';
 import money from '../icons/money.png';
 import Appcontext from '../Appcontext';
 import '../main/mainPage.css';
-const FoodCards = ({ Photo, Name, Details, Price, nameOfRestaurant }) => {
+const FoodCards = ({
+	Photo,
+	Name,
+	Details,
+	Price,
+	Count,
+	TotalPrice,
+	nameOfRestaurant,
+}) => {
 	// const { onItemDelete } = useContext(Appcontext);
 	const {
 		AddtoCartburgerland,
@@ -48,56 +56,77 @@ const FoodCards = ({ Photo, Name, Details, Price, nameOfRestaurant }) => {
 								<>
 									<i
 										className='bi bi-bag-plus fs-1-5rem pr-2'
-										onClick={() => AddtoCartburgerland({ Name, Price })}
+										onClick={() =>
+											AddtoCartburgerland({ Name, Price, Count, TotalPrice })
+										}
 									></i>
 								</>
 							) : nameOfRestaurant === 'anatolia' ? (
 								<>
 									<i
 										className='bi bi-bag-plus fs-1-5rem pr-2'
-										onClick={() => AddtoCartanatolia({ Name, Price })}
+										onClick={() =>
+											AddtoCartanatolia({ Name, Price, Count, TotalPrice })
+										}
 									></i>
 								</>
 							) : nameOfRestaurant === 'chia' ? (
 								<>
 									<i
 										className='bi bi-bag-plus fs-1-5rem pr-2'
-										onClick={() => AddtoCartchia({ Name, Price })}
+										onClick={() =>
+											AddtoCartchia({ Name, Price, Count, TotalPrice })
+										}
 									></i>
 								</>
 							) : nameOfRestaurant === 'chickenCounter' ? (
 								<>
 									<i
 										className='bi bi-bag-plus fs-1-5rem pr-2'
-										onClick={() => AddtoCartchickenCounter({ Name, Price })}
+										onClick={() =>
+											AddtoCartchickenCounter({
+												Name,
+												Price,
+												Count,
+												TotalPrice,
+											})
+										}
 									></i>
 								</>
 							) : nameOfRestaurant === 'maya' ? (
 								<>
 									<i
 										className='bi bi-bag-plus fs-1-5rem pr-2'
-										onClick={() => AddtoCartmaya({ Name, Price })}
+										onClick={() =>
+											AddtoCartmaya({ Name, Price, Count, TotalPrice })
+										}
 									></i>
 								</>
 							) : nameOfRestaurant === 'mizban' ? (
 								<>
 									<i
 										className='bi bi-bag-plus fs-1-5rem pr-2'
-										onClick={() => AddtoCartmizban({ Name, Price })}
+										onClick={() =>
+											AddtoCartmizban({ Name, Price, Count, TotalPrice })
+										}
 									></i>
 								</>
 							) : nameOfRestaurant === 'perprok' ? (
 								<>
 									<i
 										className='bi bi-bag-plus fs-1-5rem pr-2'
-										onClick={() => AddtoCartperprok({ Name, Price })}
+										onClick={() =>
+											AddtoCartperprok({ Name, Price, Count, TotalPrice })
+										}
 									></i>
 								</>
 							) : nameOfRestaurant === 'saj' ? (
 								<>
 									<i
 										className='bi bi-bag-plus fs-1-5rem pr-2'
-										onClick={() => AddtoCartsaj({ Name, Price })}
+										onClick={() =>
+											AddtoCartsaj({ Name, Price, Count, TotalPrice })
+										}
 									></i>
 								</>
 							) : (

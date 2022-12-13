@@ -46,6 +46,12 @@ p {
 .w-94 {
 	width: 94%;
 }
+.w-3rem {
+	width: 3rem;
+}
+.w-5-5rem {
+	width: 5.5rem;
+}
 .h-55 {
 	height: 55%;
 }
@@ -78,6 +84,9 @@ p {
 }
 .fs-1-5rem {
 	font-size: 1.5rem;
+}
+.fs-1-75rem {
+	font-size: 1.75rem;
 }
 .fs-2rem {
 	font-size: 2rem;
@@ -122,6 +131,14 @@ p {
 	width: 4rem !important;
 	height: 4rem !important;
 }
+.width-height-4-5rem {
+	width: 4.5rem !important;
+	height: 4.5rem !important;
+}
+.width-height-3-5rem {
+	width: 3.5rem !important;
+	height: 3.5rem !important;
+}
 .buttons-select-footer {
 	position: relative;
 	background-color: black !important;
@@ -134,7 +151,7 @@ p {
 	box-shadow: 0px 1px 10px 5px rgba(255, 255, 255, 0.37);
 }
 .widthOfwelcomeLogo {
-	width: 8rem;
+	width: 6rem;
 }
 .text-start {
 	text-align: start !important;
